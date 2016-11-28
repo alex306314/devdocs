@@ -6,54 +6,54 @@ title: template (generic)
 menu_title: template (generic)
 menu_order: 1
 ---
-*This is a template for a topic that has not yet been written by the Magento Developer Docs team.*
+*这是一个那些还没有被Magneto开发者文档组编写的主题的模板*
 
-We encourage our community members to add content; either by writing a full topic, adding new sections to existing topic, or even just a few sentences about something you know of this topic. Don't worry about perfect grammar or form; just get your brilliance down!!
+我们鼓励我们的社区成员来添加内容；可以添加一个全新的主题、添加一部分到已有主题或是仅一句话和某个主题有关的。不要担心最佳语法或形式；仅展示你的才华（just get your brilliance down）
 
-To get started, edit your local version of this file, using the markdown language (and HTML where needed). Then, create a Pull Request to have your contribution reviewed by the DevDocs team.
+开始编辑你的本地版本文件，使用markdown语言（有的地方需要HTML）。然后创建一个Pull Request让你的贡献可以被文档组浏览到。
 
-Your contributions to our Docs and your experience with using Magento, are very valued and appreciated. Let us know if you have any questions!
+你对我们文档的贡献及使用Magento的经验都非常有价值和宝贵。如果有任何问题请让我们知道
 
-<h2 id="overview">Overview</h2>
-PROVIDE OVERVIEW OF TOPIC HERE
+<h2 id="overview">综述</h2>
+主题综述写在这里
 
-<h2 id="H2">HEADING 2</h2>
-PROVIDE TEXT HERE FOR FIRST SECTION.
+<h2 id="H2">标题2</h2>
+第一部分的文字
 
 <div class="bs-callout bs-callout-info" id="info">
 
-  <p>INSERT NOTE TEXT HERE</a>.</p>
+  <p>这里添加注解笔记</a>.</p>
 
 </div>
 
-<h3 id="H3">HEADING 3</h3>
-PROVIDE TEXT HERE FOR NEXT SECTION.
+<h3 id="H3">标题3</h3>
+下一个区块的内容
 
-TO HYPERLINK TO ANOTHER TOPIC... refer to the <a href="{{page.baseurl}}extension-dev-guide/bk-extension-dev-guide.html">NAME OF TOPIC OR BOOK</a>.
+超链接到另一个主题 <a href="{{page.baseurl}}extension-dev-guide/bk-extension-dev-guide.html">主题或书的名称</a>.
 
 
 
-<h2 id="H2">HEADING 2</h2>
-PROVIDE TEXT HERE FOR NEXT SECTION.
+<h2 id="H2">标题 2</h2>
+另一个区域正文
 
-ADD DIAGRAM OR ILLUSTRATION <p><img src="{{ site.baseurl }}common/images/NAME_OF_IMAGEjpg" alt="HOVER TEXT HERE"></p>
+添加图表或插图 <p><img src="{{ site.baseurl }}common/images/NAME_OF_IMAGEjpg" alt="提示文字"></p>
 
-<h2 id="book-related">Related topics</h2>
+<h2 id="book-related">相关主题</h2>
 
-* <a href="{{page.baseurl}}_____/_____.html">Title of related topic</a>
-* <a href="{{page.baseurl}}_____/_____.html">Title of related topic</a>
+* <a href="{{page.baseurl}}_____/_____.html">相关主题标题</a>
+* <a href="{{page.baseurl}}_____/_____.html">相关主题标题</a>
 
-## Collapsible Content
+## 可折叠正文
 
-### Examples
-{% collapsible Click to show/hide content %}
-To use the collapsible content functionality, you can use the `collapsible` block tag. Any content inside this block will be hidden until the header text is clicked.
+### 例如
+{% collapsible 点击显示/隐藏内容 %}
+为了使用可折叠内容功能你可以使用`collapsible`块标签。任何内容在这个块内会隐藏，直到点击标题文字
 
-See the markdown version of this file for examples.
+查看这个文件的markdown版本示例
 {% endcollapsible %}
 
-{% collapsible Click to show/hide image %}
-![This is an image]({{ site.baseurl }}common/images/connect_keys2.png)
+{% collapsible 点击显示/隐藏内容 %}
+![这是一个图片]({{ site.baseurl }}common/images/connect_keys2.png)
 {% endcollapsible %}
 
 {% collapsible HTML Table %}
@@ -97,49 +97,49 @@ See the markdown version of this file for examples.
 * List Item 3
 {% endcollapsible %}
 
-{% collapsible Click to show/hide included content %}
+{% collapsible 点击显示/隐藏include内容 %}
 {% include mtf/page-generator.html %}
 {% endcollapsible %}
 
-{% collapsible Collapsible Code Examples%}
+{% collapsible 可折叠代码块示例%}
 
-**Normal Markdown**
+**正常markdown**
 
 ~~~
 <div class="collapsible">
-  <h4 class="collapsible-title">Collapsible Title</h4>
+  <h4 class="collapsible-title">可折叠标题</h4>
   <div class="collapsible-content">
-    <p>Put collapsible content here.</p>
+    <p>可折叠正文</p>
   </div>
 </div>
 ~~~
 
-**Highlighted Code**
+**主亮代码**
 
 {% highlight html %}
 <div class="collapsible">
-  <h4 class="collapsible-title">Collapsible Title</h4>
+  <h4 class="collapsible-title">可折叠标题</h4>
   <div class="collapsible-content">
-    <p>Put collapsible content here.</p>
+    <p>可折叠正文</p>
   </div>
 </div>
 {% endhighlight %}
 {% endcollapsible %}
 
 
-### Collapsible Group
+### 可折叠组
 
 <div class="collapsible">
-  <b class="collapsible-title">Collapsible Topic 1</b>
+  <b class="collapsible-title">可折叠主题1</b>
   <div class="collapsible-content">
-    <p>You can have multiple title-content pairs in a collapsible container.</p>
+    <p>你可以在可折叠容器中有多个 标题-正文 对</p>
   </div>
-  <b class="collapsible-title">Collapsible Topic 2</b>
+  <b class="collapsible-title">可折叠主题2</b>
   <div class="collapsible-content">
-    <p>Each content is controlled by its preceding title. </p>
+    <p>每一块内容都是由它之前的标题控制</p>
   </div>
-  <b class="collapsible-title">Collapsible Topic 3</b>
+  <b class="collapsible-title">可折叠主题3</b>
   <div class="collapsible-content">
-    <p>Clicking on each title will open its corresponding content and close any open contents.</p>
+    <p>点击标题会打开折叠的内容并关闭其它打开的内容</p>
   </div>
 </div>

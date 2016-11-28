@@ -1,47 +1,46 @@
 ---
 layout: default
 group: arch-guide
-subgroup: Architectural Basics
-title: Architectural basics overview
-menu_title: Architectural basics
+subgroup: 架构基础
+title: 架构基础概览
+menu_title: 架构基础
 menu_node: parent
-menu_order: 
+menu_order:
 version: 2.0
 github_link: architecture/archi_perspectives/ABasics_intro.md
 redirect_from: /guides/v1.0/architecture/archi_perspectives/ABasics_intro.html
 ---
 
 
-<h2>Architectural basics overview</h2>
+<h2>架构基础概览</h2>
 
-Magento incorporates the core architectural principles of object-oriented, PHP-based applications. Comprehensive discussions of these general principles exist both on-line and in printed form. 
+Magento组成核心架构原则使用面向对象、基于PHP的程序应用。基本原则理深层讨论有在线和打印版。
 
-The following discussion focuses on how these topics apply directly to Magento:
+下面的讨论关注于这些主题是如何直接应用于Mgento：
 
-* Magento technology stack
-* Magento View Model
-* Extensibility
-* Modularity
-* Event-driven architecture
-* Security
-
-
-
-<i>Information to be added in a later sprint.</i>
+* Magento技术栈
+* Magento视图模型 View Model
+* Extensibility可扩展性
+* Modularity模块化
+* Event-driven architecture事件驱动架构
+* Security安全性
 
 
 
-
-
-<h3>Related topics</h3>
-
-<a href="{{page.baseurl}}architecture/archi_perspectives/arch_diagrams.html">Architectural diagrams</a>
-
-<a href="{{page.baseurl}}architecture/tech-stack.html">Technology stack</a>
-
-<a href="{{page.baseurl}}architecture/stack-basics.html">Stack basics</a>
+<i>随后添加的信息.</i>
 
 
 
-<a href="{{page.baseurl}}architecture/versioning.html">Versioning</a>
 
+
+<h3>想关主题Related topics</h3>
+
+<a href="{{page.baseurl}}architecture/archi_perspectives/arch_diagrams.html">架构图解</a>
+
+<a href="{{page.baseurl}}architecture/tech-stack.html">技术栈</a>
+
+<a href="{{page.baseurl}}architecture/stack-basics.html">栈基础</a>
+
+
+
+<a href="{{page.baseurl}}architecture/versioning.html">版本</a>
