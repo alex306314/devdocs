@@ -75,7 +75,7 @@
 
 - 重载Jekyll服务器. (生成devdocs站点.)
 
-        vagrant ssh -c "kill $(ps aux | grep '[j]ekyll' | awk '{print $2}'); cd /vagrant/devdocs; jekyll serve --host=0.0.0.0"
+        vagrant ssh -c "kill $(ps aux | grep '[j]ekyll' | awk '{print $2}'); cd /jekyll/devdocs;jekyll serve --host=0.0.0.0"
 
 
 ### 命令
