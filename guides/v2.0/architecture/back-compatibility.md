@@ -2,8 +2,8 @@
 layout: default
 group: arch-guide
 subgroup: Architectural Basics
-title: Backward compatibility
-menu_title: Backward compatibility
+title: 向后兼容性
+menu_title: 向后兼容性
 menu_order: 3
 version: 2.0
 github_link: architecture/back-compatibility.md
@@ -30,4 +30,3 @@ For more information, see [Backward compatibility]({{page.baseurl}}/extension-de
 <h3>Related topics</h3>
 
 <a href="{{page.baseurl}}architecture/archi_perspectives/ABasics_intro.html">Architectural basics</a>
-

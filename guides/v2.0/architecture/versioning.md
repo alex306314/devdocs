@@ -146,7 +146,7 @@ The following steps demonstrate the packaging and backward compatibility story f
 
 
    This sample in <code>composer.json</code> states this site is dependent on a release candidate of a simulated Magento 2.0 release.
-   
+
 {% highlight JSON %}
 {
   "name": "myexamplestore/sample-site",
@@ -196,7 +196,7 @@ The following steps demonstrate the packaging and backward compatibility story f
 {% endhighlight %}
 </li>
 
-<li>Run <code>composer update</code> and notice the core modules were updated since RC1, but the extension remains unchanged because of BC policy. 
+<li>Run <code>composer update</code> and notice the core modules were updated since RC1, but the extension remains unchanged because of BC policy.
 
    This step repeats with each subsequent release of Magento (2.1, 2.2, 2.3, etc.). Deprecation strategy and community communication happens in 2.3.
 </li>
@@ -243,7 +243,3 @@ The following steps demonstrate the packaging and backward compatibility story f
 <a href="{{page.baseurl}}architecture/backward-compatibility.html">Backward compatibility</a>
 
 <a href="{{page.baseurl}}architecture/archi_perspectives/ABasics_intro.html">Architectural basics</a>
-
-
-
-

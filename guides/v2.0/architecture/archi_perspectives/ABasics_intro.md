@@ -1,7 +1,7 @@
 ---
 layout: default
 group: arch-guide
-subgroup: 架构基础
+subgroup: Architectural Basics
 title: 架构基础概览
 menu_title: 架构基础
 menu_node: parent

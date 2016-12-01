@@ -18,7 +18,7 @@ redirect_from: /guides/v1.0/architecture/version_store.html
 <h2 id="verpol">Where is version information stored?</h2>
 
 
-Both software version numbers and product version numbers are found in the `version` field of the component's or metapackage's `composer.json` file. 
+Both software version numbers and product version numbers are found in the `version` field of the component's or metapackage's `composer.json` file.
 
 
 For example, you can declare software version as a version of the component:
@@ -36,9 +36,9 @@ Or you can use it to declare a dependency on a particular version of a component
 <pre>
 
 "require": {
-    
+
    "acme/foo": "1.2.*",
-    
+
    "acme/bar": "2.2.0"
 
 }
@@ -52,7 +52,3 @@ Or you can use it to declare a dependency on a particular version of a component
 <a href="{{page.baseurl}}architecture/back-compatibility.html">Backward compatibility</a>
 
 <a href="{{page.baseurl}}architecture/archi_perspectives/ABasics_intro.html">Architectural basics</a>
-
-
-
-

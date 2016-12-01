@@ -1,10 +1,10 @@
 ---
 layout: default
-group: 
-subgroup: 
-title: Language packages
-menu_title: Language packages
-menu_order: 
+group:
+subgroup:
+title: 语言包
+menu_title: 语言包
+menu_order:
 version: 2.0
 github_link: architecture/arch_translations.md
 redirect_from: /guides/v1.0/architecture/arch_translations.html
@@ -24,6 +24,3 @@ For more information, refer to <a href="{{page.baseurl}}architecture/behavior/xl
 * <a href="{{page.baseurl}}architecture/modules/mod_intro.html">Modules</a>
 * <a href="{{page.baseurl}}architecture/arch_libraries.html">Libraries</a>
 * <a href="{{page.baseurl}}architecture/arch_themes.html">Themes</a>
-
-
-

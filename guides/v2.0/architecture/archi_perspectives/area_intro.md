@@ -1,10 +1,10 @@
 ---
 layout: default
-group: a
+group:
 subgroup: Architectural Layers
 title: Magento Area
 menu_title: Magento Area
-menu_order: 
+menu_order:
 version: 2.0
 github_link: architecture/archi_perspectives/area_intro.md
 redirect_from: /guides/v1.0/architecture/archi_perspectives/area_intro.html
@@ -49,18 +49,18 @@ L-view
     L-layout
     L-template.phtml
     L-...
-    
-    
-    
-    
-    
+
+
+
+
+
 Each area declares itself in a module. All resources specific for an area are located in area's module as well.
 You can use an area's module to enable or disable an area. If this module is enabled, it injects an area's routers into general application's routing process. If this module is disabled, an area's routers are not loaded and, as a result, an area's resources and specific functionality are not available.
 
  area can have one or several routers
- 
+
  Area's abstract controller defines the behaviour of all actions of an area
- 
+
  An area's controllers are to be unique for an area
 
 <h3>Magento area configuration</h3>
@@ -68,10 +68,10 @@ You can use an area's module to enable or disable an area. If this module is ena
 How do areas and modules interact?
  — Modules are independent of areas. Modules can belong to multiple Areas.
 — Area is declared in a separate module (Q: WHERE?) If this module is disabled, the entire Area in the module is disabled
-— Disabling an Area will not disable the module in any other Area 
+— Disabling an Area will not disable the module in any other Area
 — Areas are independent of each other. Areas must not use resources that belong to another area (Q: MODULES?)
 — Areas cannot contain data models
-— Areas are indivisible. You cannot disable part of an Area. You disable the entire Area or none of it. 
+— Areas are indivisible. You cannot disable part of an Area. You disable the entire Area or none of it.
 
 
 
@@ -79,12 +79,3 @@ How do areas and modules interact?
 <a href="{{page.baseurl}}architecture/archi_perspectives/arch_diagrams.html">Architectural diagrams</a>
 
 Presentation Layer
-
-
-
-
-
-
-
-
- 

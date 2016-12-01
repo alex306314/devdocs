@@ -1,6 +1,6 @@
 ---
 layout: default
-group: 
+group:
 subgroup: Architecture
 title: Logical view
 menu_title: Logical view
@@ -18,14 +18,14 @@ redirect_from: /guides/v1.0/architecture/logical_view.html
  <h4>Module anatomy</h4>
   
  <h>Modules and areas</h4> 
-          
+         
 
 <h3>Themes</h3>
  <h4>Default responsive theme</h4>
- <h4>Inheritance</h4> 
-          
+ <h4>Inheritance</h4>
+         
 <h3>Language Packets/Translation files</h3>
-  
+ 
 <h2>Composer package</h2>
 
 
@@ -40,13 +40,13 @@ redirect_from: /guides/v1.0/architecture/logical_view.html
        <h3>Additional framework components</h3>
        
        <h4>infrastructure models</h4>
-        
+       
        approximately 40 non-commercial modules
        <h4>areas of core commercial functionality</h4>
         
           <h2>Third-party frameworks</h2>
           <h2>File System</h2>
-          
+         
        
 <h2>Libraries</h2> 
 
@@ -56,6 +56,5 @@ redirect_from: /guides/v1.0/architecture/logical_view.html
  <h3>Magento/Framework libraries</h3>
  
   <h3>Namespaces</h3>
-  
+ 
   <h3>Dependencies</h3> 
-

@@ -1,10 +1,10 @@
 ---
 layout: default
-group: 
+group:
 subgroup: Architecture
-title: Magento as a modular system
-menu_title: Magento as a modular system
-menu_order: 
+title: Magento 作为一个模块化系统
+menu_title: Magento 作为一个模块化系统
+menu_order:
 version: 2.0
 github_link: architecture/arch_asmodsys.md
 ---
@@ -21,4 +21,3 @@ For more information about the components, refer to the following topics:
 * <a href="{{page.baseurl}}architecture/arch_themes.html">Themes</a>
 
 * <a href="{{page.baseurl}}architecture/arch_translations.html">Language packages</a>
-

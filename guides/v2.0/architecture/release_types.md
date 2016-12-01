@@ -96,7 +96,3 @@ The `x.y.z` numbers will change according to Semantic Versioning policy provisio
 <a href="{{page.baseurl}}architecture/back-compatibility.html">Backward compatibility</a>
 
 <a href="{{page.baseurl}}architecture/archi_perspectives/ABasics_intro.html">Architectural basics</a>
-
-
-
-

@@ -2,8 +2,8 @@
 layout: default
 group: arch-guide
 subgroup: Architectural Basics
-title: Changes to classes and method versions
-menu_title: Changes to classes and method versions
+title: 类和方法的版本改动
+menu_title: 类和方法的版本改动
 menu_order: 5
 
 level3_menu_node: level3child
@@ -17,7 +17,7 @@ redirect_from: /guides/v1.0/architecture/version_store.html
 
 <h2>Changes to classes and method versions</h2>
 
-The following table identifies typical Major, Minor and Patch level changes to interfaces and classes. 
+The following table identifies typical Major, Minor and Patch level changes to interfaces and classes.
 
 <table>
 <tbody>

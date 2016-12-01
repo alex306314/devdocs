@@ -1,10 +1,10 @@
 ---
 layout: default
-group: 
-subgroup: 
-title: Architecture layers
+group:
+subgroup:
+title: 架构层次
 menu_title: Architecture layers
-menu_order: 
+menu_order:
 version: 2.0
 github_link: architecture/archi_perspectives/arch_layers.md
 redirect_from: /guides/v1.0/architecture/archi_perspectives/arch_layers.html
@@ -12,10 +12,10 @@ redirect_from: /guides/v1.0/architecture/archi_perspectives/arch_layers.html
 
 
 <h2>Magento Framework</h2>
-The Magento Framework controls how application components interact, including request flow, routing, indexing, caching, and exception handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Magento code more modular as well as decreasing dependencies. 
+The Magento Framework controls how application components interact, including request flow, routing, indexing, caching, and exception handling. It provides services that reduce the effort of creating modules that contain business logic, contributing to the goal of both making Magento code more modular as well as decreasing dependencies.
 
 This primarily PHP software component is organized into logical groups called <i>libraries</i>, which all modules can call.  Most of the framework code sits under the domain layer or encloses the presentation, service, and domain layers. The framework contains no business logic.
-(Although the Magento Framework does not contain resource models, it does contain a library of code to help implement a resource model.) 
+(Although the Magento Framework does not contain resource models, it does contain a library of code to help implement a resource model.)
 
 <div class="bs-callout bs-callout-info" id="info">
   <p>Note: Don’t confuse the Magento framework with the Zend web application framework that ships with Magento.</p>
@@ -26,7 +26,7 @@ You should never modify Framework files, although if you are extending Magento, 
 <h3>Magento Framework responsibilities</h3>
 The Magento framework provides libraries that help reduce the effort of creating modules that contain business logic.
 
-The framework is responsible for operations that are useful for potentially all modules, including: 
+The framework is responsible for operations that are useful for potentially all modules, including:
 
 * handling HTTP protocols
 * interacting with the database and filesystem
@@ -42,7 +42,7 @@ Lib/
       ../Framework
  ```
 
-* `/lib/internal` contains some non-PHP as well as PHP components. Non-PHP framework libraries includes JavaScript and LESS/CSS. 
+* `/lib/internal` contains some non-PHP as well as PHP components. Non-PHP framework libraries includes JavaScript and LESS/CSS.
 
 * `/lib/internal/Magento/Framework`  contains only PHP code. These are libraries of code plus the application entry point that routes requests to modules (that in turn call the framework libraries). For example,  libraries in the framework help implement a resource model (base classes and interfaces to inherit from) but not the resource models themselves. Certain libraries also support CSS rendering.
 
@@ -55,14 +55,14 @@ Lib/
 
 <h3>Highlights of the Magento Framework</h3>
 The Magento Framework (`lib/internal/Magento/Framework/`) provides a robust range of functionality. If you are an extension developer, you may be interested in this subset of Framework namespaces.
- 
+
 
 <table>
    <tbody>
       <tr style="background-color: lightgray">
          <th>Namespace</th>
          <th>Purpose</th>
-         
+
       </tr>
       <tr>
          <td><code>Magento\Framework\Object</code>
@@ -99,13 +99,13 @@ The Magento Framework (`lib/internal/Magento/Framework/`) provides a robust rang
 </table>
 
 <p>Other namespaces under <code>Magento\Framework</code> that will interest extension developers:</p>
- 
+
 <table>
    <tbody>
       <tr style="background-color: lightgray">
          <th>Namespace</th>
          <th>Purpose</th>
-         
+
       </tr>
       <tr>
          <td><code>Magento\Framework\ObjectManager</code>
@@ -184,7 +184,7 @@ Presentation code typically calls service contracts, particularly for a store fr
 <h2>Service layer</h2>
 The service layer provides a bridge between the presentation layer and the model layer of domain logic and resource-specific data. This is implemented using *service contracts*, which are defined using PHP interfaces.
 
-In general, the service layer 
+In general, the service layer
 
 * Resides below the presentation layer and above the domain layer.
 
@@ -201,7 +201,7 @@ In general, the service layer
 
 <h3>Who accesses the service layer?</h3>
 
-All calls from web service interfaces, or users working with your storefront (that is, controller-initiated requests), are typically routed through the service layer. We strongly encourage the use of service contracts to call business logic. 
+All calls from web service interfaces, or users working with your storefront (that is, controller-initiated requests), are typically routed through the service layer. We strongly encourage the use of service contracts to call business logic.
 
 External applications can make requests for business logic with simple SOAP and REST calls. With some simple XML or JSON, you can expose the service layer’s PHP API and make it accessible to REST or SOAP web services. Once implemented, a web service can make a single API call and return an information-rich data structure.
 
@@ -213,7 +213,7 @@ Service contract clients include:
 
 <h3>Service contract anatomy</h3>
 
-The service contract of a module is defined by the set of interfaces in the module's `/Api`. It typically consists of: 
+The service contract of a module is defined by the set of interfaces in the module's `/Api`. It typically consists of:
 
 * service interfaces in the `/Api` namespace of the module
 
@@ -222,16 +222,16 @@ The service contract of a module is defined by the set of interfaces in the modu
 * data (or *entity*) interfaces in the `Api/Data` directory. *Data entities* are data structures passed to and returned from service interfaces.
 
 
-Typically, service contracts provide three distinct types of interfaces: 
+Typically, service contracts provide three distinct types of interfaces:
 
 * Repository interfaces
 * Management interfaces
 * Metadata interfaces
 
-However, there is no requirement that service contracts conform to all three patterns. 
+However, there is no requirement that service contracts conform to all three patterns.
 
 <h3>Advantages of service contracts</h3>
-Service contracts permit you to add a new customer extension that adds or changes business logic-level resource models and models without breaking the system. How? Through the use of the &lt;preference&gt; element of a dependency injection config file (`di.xml`) file. The `di.xml` file specifies which PHP class to use for the interface `Magento\Customer\Api\CustomerRepositoryInterface`. 
+Service contracts permit you to add a new customer extension that adds or changes business logic-level resource models and models without breaking the system. How? Through the use of the &lt;preference&gt; element of a dependency injection config file (`di.xml`) file. The `di.xml` file specifies which PHP class to use for the interface `Magento\Customer\Api\CustomerRepositoryInterface`.
 
 Another module can change this interface file by specifying a different class name. However, if the client code uses the interface definition only, no class change is necessary.
 
@@ -242,33 +242,33 @@ Service contracts
 <h2>Domain layer</h2>
 The domain layer holds the business logic layer of a Magento module. It typically does not contain resource-specific or database-specific information. Its primary functions include:
 
-* Defines the generic Magento data objects, or models, that contain business logic. This logic defines which operations can be performed on particular types of data, such as a Customer object. These models contain generic information only. Applications can also use SOAP or RESTful endpoints to request data from models. 
+* Defines the generic Magento data objects, or models, that contain business logic. This logic defines which operations can be performed on particular types of data, such as a Customer object. These models contain generic information only. Applications can also use SOAP or RESTful endpoints to request data from models.
 
 * (Optionally) Includes the implementation of service contracts, although not their definition.
 
-Best practice: Use service contracts to communicate to the domain layer by passing data types through strongly typed objects. This practice can help you avoid the need to replace presentation layer code when replacing business layer logic. 
+Best practice: Use service contracts to communicate to the domain layer by passing data types through strongly typed objects. This practice can help you avoid the need to replace presentation layer code when replacing business layer logic.
 
 
 
 <h3>Models</h3>
 
-Each domain-layer model contains a reference to a resource model, which it uses to retrieve data from the database with MySql calls.  This resource model contains logic for connecting to the underlying database, typically MySQL. A model requires a resource model only if the model data must persist. 
+Each domain-layer model contains a reference to a resource model, which it uses to retrieve data from the database with MySql calls.  This resource model contains logic for connecting to the underlying database, typically MySQL. A model requires a resource model only if the model data must persist.
 
 <h3>Who accesses the domain layer?</h3>
 There are three primary ways of accessing a module's domain-layer code:
 
-* Service contracts are the recommended way for one module to access another module's domain-level code. This loosely coupled solution is the optimal way for most modules to access another module. 
+* Service contracts are the recommended way for one module to access another module's domain-level code. This loosely coupled solution is the optimal way for most modules to access another module.
 
 * A module can directly call into another module. This tightly coupled solution is not recommended for most situations, but is sometimes unavoidable.
 
-* Domain layer code in one module can also plug itself into another module by: 
+* Domain layer code in one module can also plug itself into another module by:
 
     * event hooks
     * plugins
-    * `di.xml` files (with an SPI contract) 
-    
-Your strategy for calling another module's domain-layer code is highly dependent upon the unique configuration and needs of your system. 
-  
+    * `di.xml` files (with an SPI contract)
+
+Your strategy for calling another module's domain-layer code is highly dependent upon the unique configuration and needs of your system.
+
 
 
 <h2 id="persistence">Persistence layer</h2>
@@ -287,6 +287,3 @@ A simple resource model defines and interacts with a single table. However, some
 
 <h2 id="related">Related topics</h2>
 <a href="{{page.baseurl}}architecture/archi_perspectives/arch_diagrams.html">Architectural diagrams</a>
-
-
- 

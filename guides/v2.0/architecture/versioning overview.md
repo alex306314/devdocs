@@ -20,10 +20,10 @@ Magento  uses  software versioning to indicate the compatibility of changes in t
 
 Versioning also helps:
 
-* <b>track  software dependencies</b>. Managing dependencies can be a challenging task in a large, generously populated software environment like Magento, which ships with over 100 core modules. 
+* <b>track  software dependencies</b>. Managing dependencies can be a challenging task in a large, generously populated software environment like Magento, which ships with over 100 core modules.
 
 
-* <b>support compatibility verification and ease troubleshooting</b>. Well known and tested combinations of Magento 2 platform modules  can reduce the number of combinations that require testing in your installation. 
+* <b>support compatibility verification and ease troubleshooting</b>. Well known and tested combinations of Magento 2 platform modules  can reduce the number of combinations that require testing in your installation.
 
 
 <h4>Supported specifications</h4>
@@ -60,7 +60,3 @@ For PHP code, compatibility of `@api` can be tracked on the level of structural 
 <a href="{{page.baseurl}}architecture/back-compatibility.html">Backward compatibility</a>
 
 <a href="{{page.baseurl}}architecture/archi_perspectives/ABasics_intro.html">Architectural basics</a>
-
-
-
-

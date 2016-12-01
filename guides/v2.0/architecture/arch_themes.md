@@ -1,10 +1,10 @@
 ---
 layout: default
-group: 
+group:
 subgroup: Architecture
-title: Themes
-menu_title: Themes
-menu_order: 
+title: 主题
+menu_title: 主题
+menu_order:
 version: 2.0
 github_link: architecture/arch_themes.md
 redirect_from: /guides/v1.0/architecture/arch_themes.html
@@ -25,5 +25,3 @@ For detailed information about working with themes, refer to  <a href="{{page.ba
 * <a href="{{page.baseurl}}architecture/modules/mod_intro.html">Modules</a>
 * <a href="{{page.baseurl}}architecture/arch_libraries.html">Libraries</a>
 * <a href="{{page.baseurl}}architecture/arch_translations.html">Language packages</a>
-
-

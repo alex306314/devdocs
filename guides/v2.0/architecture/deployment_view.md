@@ -1,6 +1,6 @@
 ---
 layout: default
-group: 
+group:
 subgroup: Architecture
 title: Deployment view
 menu_title: Deployment view
@@ -11,7 +11,7 @@ redirect_from: /guides/v1.0/architecture/deployment_view.html
 ---
 
 <h2>Components</h2>
-One of Magento's strongest features is its extensibility. Because Magento can be customized so extensively, there's no standard deployment to describe. 
+One of Magento's strongest features is its extensibility. Because Magento can be customized so extensively, there's no standard deployment to describe.
 
 
 * application server
@@ -21,10 +21,9 @@ One of Magento's strongest features is its extensibility. Because Magento can be
 
 
 
-<h2>Simple use case scenario</h2> 
+<h2>Simple use case scenario</h2>
 (MAGEDOC-1813)
 
 <h2>Complex use case scenario</h2> 
 
 <h2>Default test framework</h2>
-

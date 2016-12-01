@@ -1,6 +1,6 @@
 ---
 layout: default
-group: 
+group:
 subgroup: Architecture
 title: Process view
 menu_title: Process view
@@ -25,4 +25,4 @@ redirect_from: /guides/v1.0/architecture/process_view.html
 <h2>High availability</h2>
 <h2>Page caching</h2>
 <h2>Virtualization</h2>
-<h2>Performance monitoring</2>    
+<h2>Performance monitoring</2>   
