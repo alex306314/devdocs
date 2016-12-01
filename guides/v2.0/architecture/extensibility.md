@@ -42,16 +42,17 @@ Maximizing extensibility has been our goal through all aspects of Magento develo
 
 * <b>coding standards</b>. Adherence to  standard best practices for PHP and JavaScript code ensures that the code base is sound. Magento has adopted most of the Zend Framework Coding Standards for PHP. See <a href="{{page.baseurl}}coding-standards/bk-coding-standards.html">Coding Standards</a> for more information.
 
-* <b>编码规范</b>。坚持PHP和JS代码最佳标准实践
+* <b>编码规范</b>。坚持PHP和JS代码最佳标准实践确保代码库的可靠性。Magento采用了大量ZF框架PHP编码规范。更多信息查看<a href="{{page.baseurl}}coding-standards/bk-coding-standards.html">编码规范</a>
 
 * <b>upgrade and versioning strategies</b>. Magento has well-defined upgrade and versioning strategies that can help you avoid any problems with software component dependencies. Add modules after confirming that the module version is compatible with the Magento Framework version.
 
+* <b>升级和版本策略</b>. Magento已经定义了良好的升级和版本策略可以帮助你避免软件依赖的任何问题。添加模块确认后模块的版本号和Magento框架版本号是并存的。
 
-<h3 id="m2arch-related">Related topics</h3>
+<h3 id="m2arch-related">相关主题</h3>
 
 
-<a href="{{page.baseurl}}architecture/archi_perspectives/ABasics_intro.html">Architectural basics</a>
+<a href="{{page.baseurl}}architecture/archi_perspectives/ABasics_intro.html">架构基础</a>
 
-<a href="{{page.baseurl}}architecture/global_extensibility_features.html">Global product features that support extension development</a>
+<a href="{{page.baseurl}}architecture/global_extensibility_features.html">支持扩展开发的全局特性</a>
 
-<a href="{{page.baseurl}}architecture/frontend_custom_strategies.html">Ease of frontend customization</a>
+<a href="{{page.baseurl}}architecture/frontend_custom_strategies.html">简化前端定制</a>
