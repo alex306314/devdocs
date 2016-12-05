@@ -1,6 +1,6 @@
 <div markdown="1">
 
-Storefront and Admin:
+Storefront and Admin:店面和后台
 
 *	Internet Explorer 11 or later, Microsoft Edge, latest&ndash;1
 *	Firefox latest, latest&ndash;1 (any operating system)
