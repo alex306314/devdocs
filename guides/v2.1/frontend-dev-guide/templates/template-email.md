@@ -2,38 +2,42 @@
 layout: default  
 group: fedg
 subgroup: C_Templates
-title: Customize email templates
-menu_title: Customize email templates
+title: 自定义邮件模板
+menu_title: 自定义邮件模板
 menu_order: 4
 
 version: 2.1
 github_link: frontend-dev-guide/templates/template-email.md
 ---
 
-#### Contents
+#### Contents 正文
 
 This topic covers how to customize the content and design of email templates.
 
-* <a href="#customize-email-templates">Customize email templates</a>
-    * <a href="#customize-email-theme">Customize email templates using a theme</a>
-    * <a href="#customize-email-admin">Customize email templates using the Magento Admin</a>
-    * <a href="#customize-header-footer">Customize header and footer templates</a>
-    * <a href="#customize-content">Customize email content</a>
-* <a href="#email-styles">Email styles</a>
-    * <a href="#inline-styles">Inline styles</a>
-    * <a href="#non-inline-styles">Non-inline styles</a>
-    * <a href="#organization-email-styles">How email styles are organized</a>
-    * <a href="#custom-fonts">Custom fonts</a>
-* <a href="#email-logo">Email logo</a>
-    * <a href="#customize-logo-theme">Customize the logo using a theme</a>
-    * <a href="#customize-logo-admin">Customize the logo using the Admin</a>
-* <a href="#contact-information-emails">Use contact information in emails</a>
-* <a href="#localization">Localization</a>
-* <a href="#supported-clients">Supported email clients and devices</a>
-* <a href="#newsletter-templates">Newsletter templates</a>
+本专题涵盖如果定制邮件模板内容和设计。
 
-<h2 id="customize-email-templates">Customize email templates</h2>
+* <a href="#customize-email-templates">Customize email templates 自定义邮件模板</a>
+    * <a href="#customize-email-theme">Customize email templates using a theme 使用主题自定义邮件模板</a>
+    * <a href="#customize-email-admin">Customize email templates using the Magento Admin 使用后台自定义邮件模板</a>
+    * <a href="#customize-header-footer">Customize header and footer templates 自定义头和底部模板</a>
+    * <a href="#customize-content">Customize email content 自定义邮件内容</a>
+* <a href="#email-styles">Email styles 邮件样式</a>
+    * <a href="#inline-styles">Inline styles 内联样式</a>
+    * <a href="#non-inline-styles">Non-inline styles 非内联样式</a>
+    * <a href="#organization-email-styles">How email styles are organized 邮件样式如果被组织</a>
+    * <a href="#custom-fonts">Custom fonts 自定义字体</a>
+* <a href="#email-logo">Email logo 邮件LOGO</a>
+    * <a href="#customize-logo-theme">Customize the logo using a theme 使用主题自定义LOGO</a>
+    * <a href="#customize-logo-admin">Customize the logo using the Admin使用后台自定义LOGO</a>
+* <a href="#contact-information-emails">Use contact information in emails在邮件使用联系信息</a>
+* <a href="#localization">Localization 本地化</a>
+* <a href="#supported-clients">Supported email clients and devices 支持的邮件客户端和设备</a>
+* <a href="#newsletter-templates">Newsletter templates 资讯模板</a>
+
+<h2 id="customize-email-templates">Customize email templates 自定义邮件模板</h2>
 Email templates are stored in the `<module_dir>/view/<area>/email` directory of their respective modules. For example, the template for the new order transactional email for the Sales module is located in <a href="{{ site.mage2100url }}app/code/Magento/Sales/view/frontend/email/order_new.html"><code>&gt;Magento_Sales_module_dir&lt;/view/frontend/email/order_new.html</code></a>. 
+
+邮件模板保存在各自模块`<module_dir>/view/<area>/email`目录
 
 We strongly recommend you not change the default Magento files. If you want to customize the default templates, you should create your custom templates and configure Magento to use them instead of the default templates. 
 

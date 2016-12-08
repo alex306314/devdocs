@@ -273,14 +273,20 @@ Let's have a closer look at each particular sub-directory.
 <h2 id="theme-structure-files">Theme files主题文件</h2>
 
 Apart from the configuration file and theme metadata file, all theme files fall into the following two categories:
+除了配置文件和主题元数据文件，所有主题文件分为两类：
 
-* Static view files
-* Dynamic view files
+* Static view files 静态视图文件
+* Dynamic view files 动态视图文件
 
-<h3 id="theme-structure-pub">Static view files</h3>
+<h3 id="theme-structure-pub">Static view files 静态视图文件</h3>
 A set of theme files that are returned by the server to a browser as is, without any processing, are called the *static files* of a theme.
 
+一组由服务器直接原样出到到浏览器的主题文件，不做任何处理，叫做一个主题的表态文件。
+
 Static files can be located in a theme directory as follows:
+
+静态文件可以在以下目录找到：
+
 <pre>
 &lt;theme_dir&gt;/
 ├──&nbsp;media/
@@ -292,16 +298,27 @@ Static files can be located in a theme directory as follows:
 </pre>
 The key difference between static files and other theme files is that static files appear on a web page as references to the files, while other theme files take part in the page generation, but are not explicitly referenced on a web page as files.
 
+静态文件和其它主题文件的关键不同在于静态文件像引用它一样出现在网页，而其它主题文件参与页面生成，在网页的引用和文件是不同的。
+
 Static view files that can be accessed by a direct link from the store front, are distinguished as public theme files.
 
+静态视图文件可以在网店前端通过直链链接访问到，称之为公开视图文件。
+
 <div class="bs-callout bs-callout-info" id="info">
-  <p>To be actually accessible for browsers public static files are <a href="{{page.baseurl}}architecture/view/static-process.html#publish-static-view-files" target="_blank">published</a> to the <code>/pub/static/frontend/&lt;Vendor&gt;/&lt;theme&gt;/&lt;language&gt;/css/</code> directory.</p>
+  <p>To be actually accessible for browsers public static files are <a href="{{page.baseurl}}architecture/view/static-process.html#publish-static-view-files" target="_blank">published</a> to the <code>/pub/static/frontend/&lt;Vendor&gt;/&lt;theme&gt;/&lt;language&gt;/css/</code> directory.<br/>
+  为了让浏览器真正可获取，公开静态文件都被发布到 <code>/pub/static/frontend/&lt;Vendor&gt;/&lt;theme&gt;/&lt;language&gt;/css/</code>目录
+  </p>
 </div>
 
-<h3>Dynamic view files</h3>
+<h3>Dynamic view files 动态视图文件</h3>
 View files that are processed or executed by the server in order to provide result to the client. These are: `.less` files, templates, and layouts.
 
+被服务器处理或运行的视图文件，为了给客户端提供内容。有.less文件模板和布局
+
 Dynamic view files are located in a theme directory as follows:
+
+动态视图文件存在于如下视图目录
+
 <pre>
 &lt;theme_dir&gt;/
 ├──&nbsp;Magento_&lt;module&gt;/&nbsp;

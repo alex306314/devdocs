@@ -2,28 +2,33 @@
 layout: default  
 group: fedg 
 subgroup: A_Themes
-title: Create an Admin theme
-menu_title: Create an Admin theme
+title: 创建后台主题
+menu_title: 创建后台主题
 version: 2.0
 menu_order: 9
 github_link: frontend-dev-guide/themes/admin_theme_create.md
 ---
-<h2 id="favicon-intro">What's in this topic</h2>
+<h2 id="favicon-intro">What's in this topic 此专题有什么</h2>
 
 This topic describes how to create your custom theme for Magento Admin, referencing the similar [flow for creating a custom storefront theme]({{site.gdeurl}}frontend-dev-guide/themes/theme-create.html).
+
+些主题讲解如何给后台添加自定义主题，引用相同的创建自定义前端主题步骤
 
 **Contents**
 
 * TOC
 {:toc}
 
-## Prerequisites 
+## Prerequisites 前提条件
 
 [Set]({{page.baseurl}}config-guide/cli/config-cli-subcommands-mode.html) your Magento application to the developer [mode]({{page.baseurl}}config-guide/bootstrap/magento-modes.html). The application mode influences the way static files are cached by Magento. 
 
-## Overview
+设置为开发者模式，应用程序模块会影响静态文件的缓存方式。
+
+## Overview 概览
 
 To create a custom Admin theme, take the following steps:
+创建后台主题的步骤：
 
 1. [Create a theme directory.](#create_dir)
 2. [Add a declaration `theme.xml`.](#declare_theme)

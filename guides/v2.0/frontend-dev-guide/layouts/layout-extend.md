@@ -2,23 +2,26 @@
 layout: default
 group: fedg
 subgroup: B_Layouts
-title: Extend a layout
-menu_title: Extend a layout
+title: 扩展布局
+menu_title: 扩展布局
 menu_order: 4
 version: 2.0
 github_link: frontend-dev-guide/layouts/layout-extend.md
 redirect_from: /guides/v1.0/frontend-dev-guide/layouts/layout-extend.html
 ---
 
-<h2 id="fedg_layout_extend_merge">Create a theme extending file</h2>
+<h2 id="fedg_layout_extend_merge">Create a theme extending file创建一个主题扩展文件</h2>
 
 
 Rather than copy extensive page layout or page configuration code and then modify what you want to change, in the Magento system, you only need to create an *extending layout file* that contains the changes you want. 
 
+不是复制扩展的页面布局或页面配置代码然后修改你想做的改变，在Magento系统，你只需要创建包含你想修改的内容的扩展布局文件。
 
 To add an extending <a href="{{page.baseurl}}frontend-dev-guide/layouts/layout-types.html#layout-types-conf" target="_blank">page configuration</a> or <a href="{{page.baseurl}}frontend-dev-guide/layouts/layout-types.html#layout-types-gen" target="_blank">generic layout</a> file:
 
-2.	Put the layout file in the following location:
+来添加一个扩展页面配置或通用布局文件：
+
+2.	Put the layout file in the following location: 布局文件放到下面位置：
 <pre>
 &lt;theme_dir&gt;
 &nbsp;|__/&lt;Namespace&gt;_&lt;Module&gt;
@@ -29,9 +32,13 @@ To add an extending <a href="{{page.baseurl}}frontend-dev-guide/layouts/layout-t
 
 For example, to customize the layout defined in `<Magento_Catalog_module_dir>/view/frontend/layout/catalog_product_view.xml`, you need to add a layout file with the same name in your custom theme, like following:
 
+例如，要自定义`<Magento_Catalog_module_dir>/view/frontend/layout/catalog_product_view.xml`这个布局文件，你需要在你的自定义主题添加一个同名布局文件：
+
 <code>&lt;theme_dir&gt;/Magento_Catalog/layout/catalog_product_view.xml</code>
 
 To add an extending <a href="{{page.baseurl}}frontend-dev-guide/layouts/layout-types.html#layout-types-page" target="_blank">page layout</a> file:
+
+要添加一个页面布局扩展
 
 2.	Put the file in the following location:
 <pre>
@@ -44,9 +51,9 @@ To add an extending <a href="{{page.baseurl}}frontend-dev-guide/layouts/layout-t
 
 <!--
 
-<h2 id="fedg_layout_extend_merge">Processing extending layouts</h2>
+<h2 id="fedg_layout_extend_merge">Processing extending layouts 处理扩展布局</h2>
 
-Magento merges layout files as follows:
+Magento merges layout files as follows:Magento合并扩展文件如下：
 
 1. For each layout file in the list:
 	1. Loads layout handle declaration and layout instructions.
